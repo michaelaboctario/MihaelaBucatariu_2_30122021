@@ -9,6 +9,8 @@ gris  le fond #DEEBFF
     --main-color: #0065FC;
     --main-light-color: #DEEBFF;
     --main-text-color: #000000;
+    --main-bg-light-color: #FFFFFF;
+    --main-shadow-color: #DFDFDF;
 }
 
 body {
@@ -220,7 +222,6 @@ img {
     justify-content: flex-start;
     border-radius: 20px;
     width: 70%;
-    /* padding: 0px 40px; */
     padding: 0 2%;
     margin-top: 20px;
 }
@@ -237,11 +238,10 @@ img {
     min-width: 200px;
     width: 29%;
     height: 190px;
-    background-color:  #ffff;
-    border: 4px solid #ffff;
-    /* margin: 10px 10px 10px 0px; */
+    background-color:  var(--main-bg-light-color);
+    border: 4px solid var(--main-bg-light-color);
     border-radius: 20px;
-    box-shadow: 1px 1px 10px #dfdfdf;
+    box-shadow: 1px 1px 10px var(--main-shadow-color);
 }
 
 .card-hotel img {
@@ -259,7 +259,6 @@ img {
 .card-group-four:hover {
     box-shadow: 8px 8px 10px var(--main-light-color);
     transform: scale(1.06);
-
 }
 
 .card-body-hotel {
@@ -335,10 +334,10 @@ h3 {
 .card-popular-hotel {
     min-width: 200px;
     height: 130px;
-    background-color:  #ffff;
-    border: 5px solid #ffff;
+    background-color:  var(--main-bg-light-color);
+    border: 5px solid var(--main-bg-light-color);
     border-radius: 20px;
-    box-shadow: 1px 1px 10px #dfdfdf;
+    box-shadow: 1px 1px 10px var(--main-shadow-color);
 }
 
 .card-popular-hotel a {
@@ -404,13 +403,13 @@ h3 {
 .card-activity img {
    width: 100%;
    border-radius: 25px 25px 0px 0px;
-   box-shadow: 1px 1px 10px #dfdfdf;
+   box-shadow: 1px 1px 10px var(--main-shadow-color);
 }
 
 .card-one { 
    width: 22%;
-   background-color:  #ffff;
-   box-shadow: 1px 1px 10px #dfdfdf;
+   background-color:  var(--main-bg-light-color);
+   box-shadow: 1px 1px 10px var(--main-shadow-color);
    border-radius: 25px 25px 25px 25px; 
 }
 
@@ -426,8 +425,8 @@ h3 {
 .card-group-two,
 .card-group-three,
 .card-group-four {
-   background-color:  #ffff;
-   box-shadow: 1px 1px 10px #dfdfdf;
+   background-color:  var(--main-bg-light-color);
+   box-shadow: 1px 1px 10px var(--main-shadow-color);
    border-radius: 25px 25px 25px 25px; 
 }
 
@@ -528,7 +527,7 @@ footer li {
         width: 45px;
         height: 45px;
         display: inline-block;
-        color: #ffff;;
+        color: var(--main-bg-light-color);;
         background-color:  var(--main-color);
         border: 3px var(--main-color) solid;
         padding: 10px;
@@ -554,7 +553,7 @@ footer li {
 
     .accommodation-destination {
         width: 100%;
-        background-color: #ffff;
+        background-color: var(--main-bg-light-color);
         padding: 0px 30px;     
     }
     
@@ -579,7 +578,7 @@ footer li {
     
     .page-activity {
         width: 100%;   
-        background-color: #ffff;
+        background-color: var(--main-bg-light-color);
     }
 
     .page-activity h2 {
