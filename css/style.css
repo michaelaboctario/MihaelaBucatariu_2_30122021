@@ -215,6 +215,7 @@ img {
     margin-top: 30px;
     display: flex;
     gap: 30px;
+    align-items: stretch;
 }
 
 .accommodation-destination {
@@ -303,10 +304,11 @@ h3 {
 }
 
 .accommodation-destination h2, 
-.page-activity h2 {
+.page-activity h2,
+.popular-hosting h2 {
     font-size: 20px;
     font-weight: bold;
-    margin: 30px 30px 20px 0px;
+    margin: 30px 0 20px 0px;
 }
 
 .popular-hosting h2 {
@@ -314,7 +316,6 @@ h3 {
     justify-content: space-between;
     font-size: 20px;
     font-weight: bold;
-    margin: 40px 0 20px 0;
 }
 
 .link-show-more {
@@ -618,7 +619,7 @@ footer li {
     footer {
         gap: 40px;
         width: 100%;
-        padding: 30px 0px 0px 20px;
+        padding: 30px 0px 30px 20px;
     }
     
     footer div {
