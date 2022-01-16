@@ -212,32 +212,41 @@ img {
 /* section accommodation (hebergements) */
 
 .page-accommodation-destination {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
-    gap: 40px;
+    gap: 30px;
 }
 
 .accommodation-destination {
     background-color: var(--main-bg-color);
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     border-radius: 20px;
     width: 70%;
-    margin-top: 20px;
 }
 
+/*
 .card-accommodation-destination {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     gap: 30px;
-    padding: 0 1%;
+}
+*/
+
+.card-accommodation-destination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+    width: 100%;
+    gap: 40px;
 }
 
-.card-hotel {
+.card-accomodation-hotel {
     min-width: 200px;
     width: 29%;
     height: 190px;
@@ -247,13 +256,13 @@ img {
     box-shadow: 1px 1px 10px var(--main-shadow-color);
 }
 
-.card-hotel img {
+.card-accomodation-hotel img {
     width: 100%;
     height: 110px;
     border-radius: 15px 15px 0 0;
 }
 
-.card-hotel:hover,
+.card-accomodation-hotel:hover,
 .card-popular-hotel:hover,
 .card-single:hover,
 .card-group-first:hover,
@@ -264,8 +273,9 @@ img {
     transform: scale(1.06);
 }
 
-.card-body-hotel {
+.card-body-accomodation-hotel {
     display:flex;
+    width: 100%;
     flex-direction: column;
     justify-content: baseline;
     margin-left: 10px;
@@ -295,8 +305,7 @@ h3 {
     color: var(--main-text-color);
     font-size: 16px;
     font-weight: bold;
-    padding: 40px 0px;
-    margin-left: 30px;
+    margin: 40px 0 0 40px;
 }
 
  /*POPULARS HOSTINGS */
@@ -307,15 +316,14 @@ h3 {
     flex-direction: column;
     border-radius: 20px;
     width: 30%;
-    min-width: 400px;
+    min-width: 350px;
     padding: 0px 30px 30px 30px;
-    margin-top: 20px;
 }
 
 .accommodation-destination h2 {
     font-size: 20px;
     font-weight: bold;
-    margin: 40px 0 30px 30px;
+    margin: 40px 0 20px 30px;
 }
 
 .popular-hosting h2 {
@@ -323,7 +331,7 @@ h3 {
     justify-content: space-between;
     font-size: 20px;
     font-weight: bold;
-    margin: 40px 0px 30px 0px;
+    margin: 40px 0 20px 0;
 }
 
 .card-popular-hosting {
@@ -338,7 +346,7 @@ h3 {
 
 .card-popular-hotel {
     min-width: 240px;
-    height: 140px;
+    height: 150px;
     background-color:  var(--main-bg-light-color);
     border: 5px solid var(--main-bg-light-color);
     border-radius: 20px;
@@ -352,7 +360,7 @@ h3 {
 
 .card-popular-hotel img {
     width: 40%;
-    height: 30%;
+    height: 100%;
     min-height: 130px;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
@@ -361,11 +369,12 @@ h3 {
 
 .card-body-popular-hotel {
     display:flex;
-    height: 30%;
+    width: 60%;
+    height: 100%;
     min-height: 120px;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 10px;
+    padding: 10px 0 10px 10px;
 }
 
 .card-body-popular-hotel h3, .card-body-popular-hotel p {
@@ -394,7 +403,7 @@ h3 {
 }
 
 .page-activity h2 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     margin: 30px 30px 20px 0px;
 }
@@ -563,25 +572,25 @@ footer li {
     .accommodation-destination {
         width: 100%;
         background-color: var(--main-bg-light-color);
-        padding: 0px 30px;     
+        padding: 0px 20px;     
     }
     
     .card-accommodation-destination {
         gap: 16px;
+        padding: 0;
     }
 
-    .accommodation-destination h2 {
-        margin: 30px 0px 20px 0px;
+    .accommodation-destination h2, 
+    .link-show-more,  
+    .popular-hosting h2,
+    .page-activity h2 {
+        margin: 20px 0px 20px 0px;
     }
 
     .popular-hosting {
         width: 100%;
         padding: 0 16px 30px;
         border-radius: 0px;
-    }
-
-    .popular-hosting h2 {
-        margin: 30px 0px 20px 10px;
     }
 
     .card-popular-hosting {
@@ -591,17 +600,14 @@ footer li {
     
     .page-activity {
         width: 100%;   
+        padding: 0px 20px;
         background-color: var(--main-bg-light-color);
     }
 
-    .page-activity h2 {
-        margin: 30px;
-    }
-    
     .card-activity {
         width: 100%;
         flex-direction: column;
-        padding: 0px 30px;
+        padding: 0px;
         gap: 30px;
         justify-content: start;
     }
@@ -636,7 +642,7 @@ footer li {
 } 
 
 @media screen and (max-width: 769px) {
-    .card-hotel {
+    .card-accomodation-hotel {
         width: 100%;
     }
 }
