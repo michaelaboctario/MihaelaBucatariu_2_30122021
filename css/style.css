@@ -227,16 +227,6 @@ img {
     width: 70%;
 }
 
-/*
-.card-accommodation-destination {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    gap: 30px;
-}
-*/
-
 .card-accommodation-destination {
     display: flex;
     flex-wrap: wrap;
