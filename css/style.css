@@ -255,11 +255,11 @@ img {
 
 .card-hotel:hover,
 .card-popular-hotel:hover,
-.card-one:hover,
-.card-group-one:hover,
-.card-group-two:hover,
-.card-group-three:hover,
-.card-group-four:hover {
+.card-single:hover,
+.card-group-first:hover,
+.card-group-second:hover,
+.card-group-third:hover,
+.card-group-fourth:hover {
     box-shadow: 8px 8px 10px var(--main-light-color);
     transform: scale(1.06);
 }
@@ -411,7 +411,7 @@ h3 {
    box-shadow: 1px 1px 10px var(--main-shadow-color);
 }
 
-.card-one { 
+.card-single { 
    width: 22%;
    background-color:  var(--main-bg-light-color);
    box-shadow: 1px 1px 10px var(--main-shadow-color);
@@ -423,36 +423,36 @@ h3 {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   gap: 40px; 
+   gap: 30px; 
 }
 
-.card-group-one, 
-.card-group-two,
-.card-group-three,
-.card-group-four {
+.card-group-first, 
+.card-group-second,
+.card-group-third,
+.card-group-fourth {
    background-color:  var(--main-bg-light-color);
    box-shadow: 1px 1px 10px var(--main-shadow-color);
    border-radius: 25px 25px 25px 25px; 
 }
 
-.card-one img {
+.card-single img {
     height: 380px;
  }
  
- .card-group-one img{  
-    height: 180px;
+ .card-group-first img{  
+    height: 190px;
  }
  
- .card-group-two img {
+ .card-group-second img {
     height: 100px;
  }
  
- .card-group-three img{
-    height: 130px;
+ .card-group-third img{
+    height: 140px;
  }
  
- .card-group-four img{
-    height: 140px;
+ .card-group-fourth img{
+    height: 150px;
  }
 
 /* FOOTER */
@@ -606,7 +606,7 @@ footer li {
         justify-content: start;
     }
     
-    .card-one,
+    .card-single,
     .card-group {
         width: 100%
     }
@@ -616,7 +616,7 @@ footer li {
         gap: 30px; 
      }
 
-    .card-one img, .card-group-one img, .card-group-two img {
+    .card-single img, .card-group-first img, .card-group-second img {
         height: 150px;
     }
 
