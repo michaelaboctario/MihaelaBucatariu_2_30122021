@@ -21,6 +21,8 @@ body {
 
 *, *:before, *:after {
     box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
@@ -57,17 +59,18 @@ img {
 
 .container {
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 30px;
 }
 
 /* nav */
 
 .nav-menu {
     margin-left: auto;
+    margin-right: 40px;
 }
 
 .menu-item {
-    margin: 0 15px;
+    margin: 0 30px;
 }
 
 .menu-item:hover {
@@ -211,7 +214,7 @@ img {
 .page-accommodation-destination {
     margin-top: 20px;
     display: flex;
-    column-gap: 3%;
+    gap: 40px;
 }
 
 .accommodation-destination {
@@ -222,7 +225,6 @@ img {
     justify-content: flex-start;
     border-radius: 20px;
     width: 70%;
-    padding: 0 2%;
     margin-top: 20px;
 }
 
@@ -231,7 +233,8 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    gap: 40px 5%;
+    gap: 30px;
+    padding: 0 1%;
 }
 
 .card-hotel {
@@ -293,6 +296,7 @@ h3 {
     font-size: 16px;
     font-weight: bold;
     padding: 40px 0px;
+    margin-left: 30px;
 }
 
  /*POPULARS HOSTINGS */
@@ -303,15 +307,15 @@ h3 {
     flex-direction: column;
     border-radius: 20px;
     width: 30%;
-    min-width: 200px;
-    padding: 0 3%;
+    min-width: 400px;
+    padding: 0px 30px 30px 30px;
     margin-top: 20px;
 }
 
 .accommodation-destination h2 {
     font-size: 20px;
     font-weight: bold;
-    margin: 40px 0 30px 10px;
+    margin: 40px 0 30px 30px;
 }
 
 .popular-hosting h2 {
@@ -319,21 +323,22 @@ h3 {
     justify-content: space-between;
     font-size: 20px;
     font-weight: bold;
-    margin: 40px 0px 30px 10px;
+    margin: 40px 0px 30px 0px;
 }
 
 .card-popular-hosting {
     display:flex;
     flex-direction: column;
     width: 100%;
-    row-gap: 10%;
-    column-gap: 10%;
+    min-width: 280px;
+    gap: 30px;
     justify-content: flex-start;
+    
 }
 
 .card-popular-hotel {
-    min-width: 200px;
-    height: 130px;
+    min-width: 240px;
+    height: 140px;
     background-color:  var(--main-bg-light-color);
     border: 5px solid var(--main-bg-light-color);
     border-radius: 20px;
@@ -348,7 +353,7 @@ h3 {
 .card-popular-hotel img {
     width: 40%;
     height: 30%;
-    min-height: 120px;
+    min-height: 130px;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
     flex-shrink: 0;
@@ -378,7 +383,7 @@ h3 {
 /* ACTIVITIES IN MARSEILLE SECTION */
 
 .page-activity {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .card-activity {
@@ -389,7 +394,7 @@ h3 {
 }
 
 .page-activity h2 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin: 30px 30px 20px 0px;
 }
@@ -431,24 +436,24 @@ h3 {
 }
 
 .card-one img {
-   height: 410px;
-}
-
-.card-group-one img{  
-   height: 210px;
-}
-
-.card-group-two img {
-   height: 110px;
-}
-
-.card-group-three img{
-   height: 140px;
-}
-
-.card-group-four img{
-   height: 180px;
-}
+    height: 380px;
+ }
+ 
+ .card-group-one img{  
+    height: 180px;
+ }
+ 
+ .card-group-two img {
+    height: 100px;
+ }
+ 
+ .card-group-three img{
+    height: 130px;
+ }
+ 
+ .card-group-four img{
+    height: 140px;
+ }
 
 /* FOOTER */
 
@@ -492,11 +497,15 @@ footer li {
     }
 
     .container {
-        padding: 0 20px;
+        padding: 0;
     }
 
     main {
         margin: 0;
+    }
+
+    .search, .filter-container, .info {
+        margin: 20px;
     }
 
     .nav-menu {
@@ -557,13 +566,17 @@ footer li {
         padding: 0px 30px;     
     }
     
+    .card-accommodation-destination {
+        gap: 16px;
+    }
+
     .accommodation-destination h2 {
         margin: 30px 0px 20px 0px;
     }
 
     .popular-hosting {
         width: 100%;
-        padding: 0 30px 30px;
+        padding: 0 16px 30px;
         border-radius: 0px;
     }
 
@@ -589,7 +602,7 @@ footer li {
         width: 100%;
         flex-direction: column;
         padding: 0px 30px;
-        gap: 40px;
+        gap: 30px;
         justify-content: start;
     }
     
@@ -600,11 +613,11 @@ footer li {
     
     .card-group {
         justify-content: start;
-        gap: 40px; 
+        gap: 30px; 
      }
 
     .card-one img, .card-group-one img, .card-group-two img {
-        height: 180px;
+        height: 150px;
     }
 
     footer {
