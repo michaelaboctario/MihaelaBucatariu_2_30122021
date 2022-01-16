@@ -290,14 +290,6 @@ h3 {
     color: #d9d9d9;
  }
 
- .link-show-more {
-    text-decoration: none;
-    color: var(--main-text-color);
-    font-size: 16px;
-    font-weight: bold;
-    margin: 40px 0 0 40px;
-}
-
  /*POPULARS HOSTINGS */
  
 .popular-hosting {
@@ -310,10 +302,11 @@ h3 {
     padding: 0px 30px 30px 30px;
 }
 
-.accommodation-destination h2 {
+.accommodation-destination h2, 
+.page-activity h2 {
     font-size: 20px;
     font-weight: bold;
-    margin: 40px 0 20px 30px;
+    margin: 30px 30px 20px 0px;
 }
 
 .popular-hosting h2 {
@@ -324,6 +317,18 @@ h3 {
     margin: 40px 0 20px 0;
 }
 
+.link-show-more {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 50px 0 40px 40px;
+} 
+
+.accommodation-destination h2 {
+    margin-left: 40px;
+}
+
 .card-popular-hosting {
     display:flex;
     flex-direction: column;
@@ -331,7 +336,6 @@ h3 {
     min-width: 280px;
     gap: 30px;
     justify-content: flex-start;
-    
 }
 
 .card-popular-hotel {
@@ -392,11 +396,6 @@ h3 {
    gap: 3%;
 }
 
-.page-activity h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 30px 30px 20px 0px;
-}
 
 .card-activity h3 {
     font-size: 14px;
@@ -574,12 +573,12 @@ footer li {
     .link-show-more,  
     .popular-hosting h2,
     .page-activity h2 {
-        margin: 20px 0px 20px 0px;
+        margin: 30px 0px 30px 0px;
     }
 
     .popular-hosting {
         width: 100%;
-        padding: 0 16px 30px;
+        padding: 0 30px 30px;
         border-radius: 0px;
     }
 
