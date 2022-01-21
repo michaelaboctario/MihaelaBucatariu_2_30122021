@@ -209,7 +209,7 @@ img {
 /* section accommodation (hebergements) */
 
 .page-accommodation-destination {
-  margin-top: 30px;
+  padding-top: 30px;
   display: flex;
   gap: 30px;
   align-items: stretch;
@@ -397,7 +397,7 @@ h3 {
 /* ACTIVITIES IN MARSEILLE SECTION */
 
 .page-activity {
-  margin-top: 40px;
+  padding-top: 20px;
 }
 
 .card-activity {
